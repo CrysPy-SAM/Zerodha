@@ -1,63 +1,48 @@
 import React from "react";
 
-import Hero from "./Hero";
-import LeftSection from "./LeftSection";
-import RightSection from "./RightSection";
-import Universe from "./Universe";
-
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-
-function PricingPage() {
+function Brokerage() {
   return (
-    <>
-      <Hero />
-      <LeftSection
-        imageURL="media/images/kite.png"
-        productName="Kite"
-        productDesription="Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices."
-        tryDemo=""
-        learnMore=""
-        googlePlay=""
-        appStore=""
-      />
-      <RightSection
-        imageURL="media/images/console.png"
-        productName="Console"
-        productDesription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
-        learnMore=""
-      />
-      <LeftSection
-        imageURL="media/images/coin.png"
-        productName="Coin"
-        productDesription="Buy direct mutual funds online, commission-free, delivered directly to your Demat account. Enjoy the investment experience on your Android and iOS devices."
-        tryDemo=""
-        learnMore=""
-        googlePlay=""
-        appStore=""
-      />
-      <RightSection
-        imageURL="media/images/kiteconnect.png"
-        productName="Kite Connect API"
-        productDesription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
-        learnMore=""
-      />
-      <LeftSection
-        imageURL="media/images/varsity.png"
-        productName="Varsity mobile"
-        productDesription="An easy to grasp, collection of stock market lessons with in-depth coverage and illustrations. Content is broken down into bite-size cards to help you learn on the go."
-        tryDemo=""
-        learnMore=""
-        googlePlay=""
-        appStore=""
-      />
-      <p className="text-center mt-5 mb-5">
-        Want to know more about our technology stack? Check out the Zerodha.tech
-        blog.
-      </p>
-      <Universe />
-    </>
+    <div className="container">
+      <div className="row p-5 mt-5 text-center border-top">
+        <div className="col-8 p-4">
+          <a href="" style={{ textDecoration: "none" }}>
+            <h3 className="fs-5">Brokerage calculator</h3>
+          </a>
+          <ul
+            style={{ textAlign: "left", lineHeight: "2.5", fontSize: "12px" }}
+            className="text-mut"
+          >
+            <li>
+              Call & Trade and RMS auto-squareoff:Additional charges of ₹50 +
+              GST per order.
+            </li>
+            <li>Digital contract notes will be sent via e-mail.</li>
+            <li>
+              Physical copies of contract notes, if required, shall be charged
+              ₹20 per contract note. Courier charges apply.
+            </li>
+            <li>
+              For NRI account (non-PIS), 0.5% or ₹100 per executed order for
+              equity (whichever is lower).
+            </li>
+            <li>
+              For NRI account (PIS), 0.5% or ₹200 per executed order for equity
+              (whichever is lower).
+            </li>
+            <li>
+              If the account is in debit balance, any order placed will be
+              charged ₹40 per executed order instead of ₹20 per executed order.
+            </li>
+          </ul>
+        </div>
+        <div className="col-4 p-4">
+          <a href="" style={{ textDecoration: "none" }}>
+            <h3 className="fs-5">List of charges</h3>
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default PricingPage;
+export default Brokerage;
