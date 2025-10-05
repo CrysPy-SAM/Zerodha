@@ -1,5 +1,5 @@
 import React from "react";
-
+  
 function OpenAccount() {
   return (
     <div className="container p-5 mb-5">
