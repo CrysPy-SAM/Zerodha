@@ -13,9 +13,9 @@ import WatchList from "./WatchList";
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      <GeneralContextProvider>
+      {/* <GeneralContextProvider> */}
         <WatchList />
-      </GeneralContextProvider>
+      {/* </GeneralContextProvider> */}
       <div className="content">
         <Routes>
           <Route exact path="/" element={<Summary />} />
